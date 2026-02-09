@@ -1,8 +1,13 @@
 # Ошибки
 
-1. def get_age(self):  
+```python
+def get_age(self):  
     now = datetime.datetime.now()  
-    ~~return self.yob - now.year~~   __return now.year - self.yob__
+    return self.yob - now.year #неправильно 
+    return now.year - self.yob
+```
+
+    
 
 2. def set_name(self, name):  
     ~~self.name = self.name~~  __self.name = name__  
